@@ -13,3 +13,9 @@ x, y, z = "Orange", "Banana", "Cherry"
 print(x)
 print(y)
 print(z)
+
+
+m='awesome'
+def myfun():
+   print("Python is " + m)
+myfun()
