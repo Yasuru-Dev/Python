@@ -8,3 +8,8 @@ u=float(5)
 print(type(y))
 print(type(z))
 print(type(u))
+
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
