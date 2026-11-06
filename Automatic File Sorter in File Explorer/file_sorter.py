@@ -4,7 +4,7 @@ path = r"C:/Users/Yasuru Dhanushka/Desktop/Python/Automatic File Sorter in File 
 files=os.listdir(path)
 print(files)
 
-folder_names = ["Image_Files","Txt_Files","Excel_Files,Power_point_Files"] #list
+folder_names = ["Image_Files","Txt_Files","Excel_Files","Power_point_Files"] #list
 for i in range(0,4):
     if not os.path.exists(path + folder_names[i]):
         print(path + folder_names[i])
@@ -17,7 +17,7 @@ for file in files:
         shutil.move(path + file, path + "Txt_Files/" + file)
     elif ".xlsx" in file and not os.path.exists(path + "Excel_Files/" + file):
         shutil.move(path + file, path + "Excel_Files/" + file)
-    elif ".pptx" in file and not os.path.exists(path + "Excel_Files/" + file):
+    elif ".pptx" in file and not os.path.exists(path + "Power_point_Files/" + file):
         shutil.move(path + file, path + "Power_point_Files/" + file)
         
     
