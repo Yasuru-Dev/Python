@@ -12,3 +12,6 @@ headers = {
 page=requests.get(url, headers=headers)
 soup=BeautifulSoup(page.text, 'html.parser')
 print(soup)
+
+soup2=soup.find('table')
+print(soup2)
